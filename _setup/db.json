@@ -5,5 +5,6 @@
   "~/.config/fish": "fish",
   "~/.config/obs-studio/basic": "obs-studio/basic",
   "~/.config/obs-studio/global.ini": "obs-studio/global.ini",
+  "~/.editorconfig": ".editorconfig",
   "~/.gitconfig": ".gitconfig"
 }
