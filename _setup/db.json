@@ -4,5 +4,6 @@
   "~/.config/alacritty": "alacritty",
   "~/.config/fish": "fish",
   "~/.config/obs-studio/basic": "obs-studio/basic",
-  "~/.config/obs-studio/global.ini": "obs-studio/global.ini"
+  "~/.config/obs-studio/global.ini": "obs-studio/global.ini",
+  "~/.gitconfig": ".gitconfig"
 }
