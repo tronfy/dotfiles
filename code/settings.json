@@ -1,0 +1,89 @@
+{
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+
+  "editor.cursorBlinking": "phase",
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorSurroundingLines": 3,
+  "editor.cursorSurroundingLinesStyle": "all",
+
+  "editor.wordWrap": "on",
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+
+  "editor.minimap.enabled": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
+
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
+  "editor.mouseWheelScrollSensitivity": 1.5,
+
+  "editor.formatOnSave": true,
+  "editor.trimAutoWhitespace": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": false,
+
+  "python.formatting.autopep8Args": ["--ignore E121"],
+  "[jsonc, typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true
+  },
+
+  "search.useIgnoreFiles": true,
+  "search.useGlobalIgnoreFiles": true,
+
+  "workbench.colorTheme": "Lunar Pink",
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.list.smoothScrolling": true,
+
+  "workbench.settings.editor": "json",
+
+  "git.confirmSync": false,
+  "git.autofetch": false,
+
+  "terminal.external.linuxExec": "alacritty",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.shell.linux": "/bin/fish",
+  "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.profiles.linux": {
+    "fish": {
+      "path": "/bin/fish"
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "fish",
+
+  "RPC.checkIdle": false,
+  "RPC.debuggingText": "debugging {file}",
+  "RPC.editingText": "{file}",
+  "RPC.fileInfoText": "{language} file",
+  "RPC.idleText": "idle",
+  "RPC.placeholderText": "visual studio code",
+  "RPC.showDebugging": false,
+  "RPC.showProblems": false,
+  "RPC.viewingText": "{file}",
+  "RPC.workspaceText": "in {workspace}",
+  "diffEditor.ignoreTrimWhitespace": false
+}

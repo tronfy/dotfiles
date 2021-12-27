@@ -1,4 +1,6 @@
 {
+  "~/.config/Code/User/keybindings.json": "code/keybindings.json",
+  "~/.config/Code/User/settings.json": "code/settings.json",
   "~/.config/alacritty": "alacritty",
   "~/.config/fish": "fish"
 }
