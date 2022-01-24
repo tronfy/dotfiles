@@ -1,0 +1,32 @@
+[
+    {
+        "iconPath": "/home/tronfy/.config/albert/org.albert.extension.websearch/{f04248ad-40fc-4505-9835-965a1722e8fa}.svg",
+        "name": "GitHub tronfy",
+        "trigger": "gt ",
+        "url": "https://github.com/tronfy/%s"
+    },
+    {
+        "iconPath": "/home/tronfy/.config/albert/org.albert.extension.websearch/{e02c915b-4ac1-4a6d-adc8-8739d5f5307b}.svg",
+        "name": "GitHub",
+        "trigger": "gh ",
+        "url": "https://github.com/%s"
+    },
+    {
+        "iconPath": "/home/tronfy/.config/albert/org.albert.extension.websearch/{75028f77-699a-4e84-8d86-d5500650943c}.",
+        "name": "DuckDuckGo",
+        "trigger": "dd ",
+        "url": "https://duckduckgo.com/?q=%s"
+    },
+    {
+        "iconPath": "/home/tronfy/.config/albert/org.albert.extension.websearch/{cb72797c-60f9-4947-960b-422b99057a63}.svg",
+        "name": "GitHub Search",
+        "trigger": "gs ",
+        "url": "https://github.com/search?utf8=✓&q=%s"
+    },
+    {
+        "iconPath": ":wolfram",
+        "name": "Wolfram Alpha",
+        "trigger": "=",
+        "url": "https://www.wolframalpha.com/input/?i=%s"
+    }
+]
