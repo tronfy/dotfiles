@@ -9,7 +9,6 @@
   "editor.cursorBlinking": "phase",
   "editor.cursorStyle": "line-thin",
   "editor.cursorSurroundingLines": 3,
-  "editor.cursorSurroundingLinesStyle": "all",
 
   "editor.wordWrap": "on",
   "editor.renderWhitespace": "none",
@@ -24,19 +23,28 @@
   "editor.smoothScrolling": true,
   "editor.mouseWheelScrollSensitivity": 1.5,
 
+  "editor.linkedEditing": true,
   "editor.formatOnSave": true,
   "editor.trimAutoWhitespace": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
 
+  "diffEditor.ignoreTrimWhitespace": false,
+
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
 
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "python.formatting.autopep8Args": ["--ignore E121"],
-  "[jsonc, typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[python]": { "editor.defaultFormatter": "ms-python.python" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -84,6 +92,5 @@
   "RPC.showDebugging": false,
   "RPC.showProblems": false,
   "RPC.viewingText": "{file}",
-  "RPC.workspaceText": "in {workspace}",
-  "diffEditor.ignoreTrimWhitespace": false
+  "RPC.workspaceText": "in {workspace}"
 }
