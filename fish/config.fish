@@ -6,4 +6,5 @@ set --export npm_config_prefix ~/.local
 
 fish_add_path ~/.local/bin
 
+source "$HOME/.config/fish/secrets.fish"
 source "$HOME/.config/fish/abbreviations.fish"

@@ -1,3 +1,5 @@
+fish/**/secrets.fish
+
 albert/**/core.db
 albert/**/QtProject.conf
 fish/**/fish_variables
