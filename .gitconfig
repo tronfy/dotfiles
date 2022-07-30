@@ -1,6 +1,6 @@
 [user]
 name = Nícolas D. Schmidt
-email = nicolasdschmidt@gmail.com
+email = nicolasdschmidt@protonmail.com
 signingkey = 091C4B8F0AD1F61A
 
 [commit]
@@ -8,3 +8,6 @@ gpgSign = true
 
 [core]
 autocrlf = input
+
+[init]
+defaultBranch = main
