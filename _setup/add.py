@@ -5,7 +5,7 @@ from re import sub
 from shutil import move
 from sys import argv
 
-from common import generic, link, DOT_DIR, DB_PATH
+from _common import generic, link, DOT_DIR, DB_PATH
 
 if (len(argv) != 2 and len(argv) != 3) or argv[1] == '-h' or argv[1] == '--help':
   print('usage: python add.py [src] [--no-link]')
