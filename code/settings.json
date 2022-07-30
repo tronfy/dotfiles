@@ -2,6 +2,7 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
+  "editor.fontWeight": "450",
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
@@ -14,6 +15,7 @@
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.bracketPairColorization.enabled": true,
 
   "editor.minimap.enabled": true,
   "editor.minimap.renderCharacters": false,
@@ -27,6 +29,7 @@
   "editor.formatOnSave": true,
   "editor.trimAutoWhitespace": true,
   "editor.codeActionsOnSave": {
+    "source.addMissingImports": true,
     "source.fixAll.eslint": true
   },
 
@@ -39,12 +42,13 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "python.formatting.provider": "black",
 
-  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css][html][javascript][json][jsonc][typescript][typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[python]": { "editor.defaultFormatter": "ms-python.python" },
-  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
 
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -59,38 +63,49 @@
     "**/node_modules": true
   },
 
+  "search.exclude": {
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/dist": true,
+    "**/build": true
+  },
+
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
 
   "workbench.colorTheme": "Lunar Pink",
-  "workbench.startupEditor": "none",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.smoothScrolling": true,
-
   "workbench.settings.editor": "json",
+  "workbench.startupEditor": "none",
+
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
 
   "git.confirmSync": false,
-  "git.autofetch": false,
+  "git.autofetch": true,
+  "git.suggestSmartCommit": false,
+
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": { "*": true },
+
+  "gitlens.advanced.messages": {
+    "suppressCreatePullRequestPrompt": true
+  },
 
   "terminal.external.linuxExec": "alacritty",
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.shell.linux": "/bin/fish",
   "terminal.integrated.enablePersistentSessions": false,
-  "terminal.integrated.profiles.linux": {
-    "fish": {
-      "path": "/bin/fish"
-    }
-  },
-  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.linux": "zsh",
 
+  "RPC.editingText": "editing a .{extension} file",
+  "RPC.viewingText": "editing a .{extension} file",
+  "RPC.debuggingText": "debugging .{extension} file",
+  "RPC.fileInfoText": "{language} file, {linecount} lines",
+  "RPC.placeholderText": "vscode",
+  "RPC.idleTimeout": 0,
+  "RPC.showWorkspace": false,
   "RPC.checkIdle": false,
-  "RPC.debuggingText": "debugging {file}",
-  "RPC.editingText": "{file}",
-  "RPC.fileInfoText": "{language} file",
-  "RPC.idleText": "idle",
-  "RPC.placeholderText": "visual studio code",
-  "RPC.showDebugging": false,
   "RPC.showProblems": false,
-  "RPC.viewingText": "{file}",
-  "RPC.workspaceText": "in {workspace}"
+  "RPC.workspaceText": "in some awesome project"
 }
