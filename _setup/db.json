@@ -1,9 +1,11 @@
 {
+  "~/.config/alacritty": "alacritty",
   "~/.config/Code/User/keybindings.json": "code/keybindings.json",
   "~/.config/Code/User/settings.json": "code/settings.json",
-  "~/.config/alacritty": "alacritty",
   "~/.config/obs-studio/basic": "obs-studio/basic",
   "~/.config/obs-studio/global.ini": "obs-studio/global.ini",
   "~/.editorconfig": ".editorconfig",
-  "~/.gitconfig": ".gitconfig"
+  "~/.gitconfig": ".gitconfig",
+  "~/.zsh_aliases": "zsh/.zsh_aliases",
+  "~/.zshrc": "zsh/.zshrc"
 }

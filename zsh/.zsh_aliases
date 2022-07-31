@@ -1,0 +1,8 @@
+alias zshc="$EDITOR ~/.zshrc"
+
+# run command silently
+shh() {
+  if [ $# -gt 0 ]; then
+    $@ >/dev/null 2>&1 &
+  else; echo "usage: shh <command>"; fi
+}
