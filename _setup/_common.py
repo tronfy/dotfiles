@@ -1,6 +1,6 @@
 from genericpath import exists
 from re import sub
-from os import environ, pardir, symlink
+from os import environ, pardir, remove, symlink
 from os.path import dirname, realpath, islink
 
 def generic(custom):
@@ -12,8 +12,9 @@ def custom(generic):
 def link(src, dst):
   if exists(dst):
     if not islink(dst):
-      a = input("file " + dst + "exists, replace with symlink? [y/N] ")
+      a = input("file " + dst + " exists, replace with symlink? [y/N] ")
       if a == 'y':
+        remove(dst)
         symlink(src, dst)
     else:
       print('already linked:', dst, '->', src)
