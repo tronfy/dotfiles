@@ -1,8 +1,42 @@
 alias zshc="$EDITOR ~/.zshrc"
 
 # run command silently
+# usage: shh <command>
 shh() {
   if [ $# -gt 0 ]; then
     $@ >/dev/null 2>&1 &
   else; echo "usage: shh <command>"; fi
+}
+
+# locate
+# usage: f <pattern> [m/w/E/a]
+f() {
+  if [ $# -gt 0 ]; then
+    # search in /manjaro
+    if [ "$2" = "m" ]; then
+      c='plocate -r "^/manjaro/[^timeshift].*$1.*"'
+    # search in /windows
+    elif [ "$2" = "w" ]; then
+      c='plocate -r "^/windows/.*$1.*"'
+    # search whole filesystem
+    elif [ "$2" = "a" ]; then
+      c='plocate "$1"'
+    # search in $HOME
+    else
+      c='plocate -r "^$HOME/.*$1.*"'
+    fi
+    eval "$c | sed 's/^/→ /' | page"
+  else; echo "usage: f <pattern> [m/w/E/a]"; fi
+}
+
+# page if large text
+# usage: echo <text> | page
+page() {
+  i=$(</dev/stdin)
+  # if linecount exceeds term height, page
+  if [ $(echo "$i" | wc -l) -gt $(expr $(tput lines) - 3) ]; then
+    echo "$i" | $PAGER
+  else
+    echo "$i"
+  fi
 }
