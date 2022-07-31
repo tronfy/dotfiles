@@ -2,10 +2,11 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ### env ###
 export EDITOR=nano
+export PAGER=less
 
+export GTK_USE_PORTAL=1
 export MANGOHUD=1
 export PROTON_EAC_RUNTIME="$HOME/.steam/steam/steamapps/common/Proton EasyAntiCheat Runtime"
-
 export SDKMAN_DIR="$HOME/.sdkman"
 
 
